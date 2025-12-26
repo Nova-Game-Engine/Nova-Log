@@ -4,11 +4,10 @@
 int main() {
     Nova::Logger l("test");
     Nova::Logger _l("tester");
-    l.info("test");
-    l.info("test");
-    l.info("test");
-    l.info("test");
-    l.error("Ttest");
-    _l.info("Testter");
+    NOVA_LOW_LOG_INFO(_l, "test");
+    NOVA_LOW_LOG_INFO(_l, "test");
+    NOVA_LOW_LOG_INFO(_l, "test");
+    NOVA_LOW_LOG_INFO(_l, "test");
+    NOVA_LOW_LOG_INFO(_l, "test");
     return 0;
 }
